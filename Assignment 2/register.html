@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Sweet Life</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/efe18fb613.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+             <a href="./index.html">Sweet Life</a>
+        </div>
+        <nav>
+            <a href="./index.html" class="nav__link">Home Page</a>
+            <a href="./register.html" class="nav__link active">Registration</a>
+            <a href="./order.html" class="nav__link">Order</a>
+        </nav>
+    </header>
+    <!-- form -->
+    <div class="formbold-main-wrapper">
+        <div class="formbold-form-wrapper">
+            <form action="http://mercury.swin.edu.au/it000000/cos10005/regtest.php" method="POST">
+                <div class="formbold-steps">
+                    <ul>
+                        <li class="formbold-step-menu1 active">
+                            <span>1</span>
+                            Sign Up
+                        </li>
+                        <li class="formbold-step-menu2">
+                            <span>2</span>
+                            Select
+                        </li>
+                        <li class="formbold-step-menu3">
+                            <span>3</span>
+                            Confirm
+                        </li>
+                    </ul>
+                </div>
+        
+                <div class="formbold-form-step-1 active">
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="firstname" class="formbold-form-label"> First name </label>
+                            <input
+                            type="text"
+                            name="firstname"
+                            placeholder="Andrio"
+                            id="firstname"
+                            class="formbold-form-input"
+                            >
+                        </div>
+                        <div>
+                            <label for="lastname" class="formbold-form-label"> Last name </label>
+                            <input
+                            type="text"
+                            name="lastname"
+                            placeholder="Dolee"
+                            id="lastname"
+                            class="formbold-form-input"
+                            >
+                        </div>
+                    </div>
+            
+                    <div class="formbold-input-flex">
+                        <div>
+                            <label for="dob" class="formbold-form-label"> Date of Birth </label>
+                            <input 
+                            type="date" 
+                            name="dob" 
+                            id="dob" 
+                            class="formbold-form-input"
+                            >
+                        </div>
+                        <div>
+                            <label for="email" class="formbold-form-label"> Email Address </label>
+                            <input
+                            type="email"
+                            name="email"
+                            placeholder="example@mail.com"
+                            id="email"
+                            class="formbold-form-input"
+                            >
+                        </div>
+                    </div>
+            
+                    <div>
+                        <label for="password" class="formbold-form-label"> Password </label>
+                        <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="formbold-form-input"
+                        >
+                    </div>
+                </div>
+        
+                <div class="formbold-form-step-2">
+                    <div>
+                        <label for="flavor" class="formbold-form-label"> Your favorite ice cream </label>
+                        <div class="chbx">
+                            <input type="checkbox" id="mango" name="mango" value="mango" class="formbold-form-input-checkbox">
+                            <label for="mango"> Mango </label><br>
+                            <input type="checkbox" id="avocado" name="avocado" value="avocado"  class="formbold-form-input-checkbox">
+                            <label for="avocado"> Avocado </label><br>
+                            <input type="checkbox" id="strawberry" name="strawberry" value="strawberry" class="formbold-form-input-checkbox">
+                            <label for="strawberry"> Strawberry</label><br>
+                            <input type="checkbox" id="chocolate" name="chocolate" value="chocolate" class="formbold-form-input-checkbox">
+                            <label for="chocolate"> Chocolate </label>
+                        </div>
+                    </div>
+                    <div class="space"></div>
+                    <div>
+                        <label for="topping" class="formbold-form-label"> Topping Option </label>
+                        <select
+                        name="password"
+                        id="topping"
+                        class="formbold-form-input">
+                            <option value="1" selected="selected">Choose your topping</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        
+                    </div>
+                    <div class="space"></div>
+                    <div>
+                        <label for="message" class="formbold-form-label"> Message </label>
+                        <textarea
+                            rows="6"
+                            name="message"
+                            id="message"
+                            placeholder="Type your message"
+                            class="formbold-form-input"
+                        ></textarea>
+                    </div>
+                </div>
+        
+                <div class="formbold-form-step-3">
+                    <div class="formbold-form-confirm">
+                        <p>Do you want to recieve our latest promotion?</p>
+        
+                        <div>
+                            <button class="formbold-confirm-btn active">
+                            Yes! I want it.
+                            </button>
+            
+                            <button class="formbold-confirm-btn">
+                            No! I don’t want it.
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="formbold-form-btn-wrapper">
+                    <button class="formbold-back-btn">Back</button>
+                    <button class="formbold-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js" type="text/javascript"></script>
+
+    <footer class="footer">
+        <video class="footer_video" muted="" loop="" autoplay src="//cdn.shopify.com/s/files/1/0526/6905/5172/t/5/assets/footer.mp4?v=29581141968431347981633714450" type="video/mp4">
+        </video>
+        <div class="container">
+          <div class="footer_inner">
+            <div class="c-footer">
+                <div class="layout">
+                    <div class="layout_item w-25">
+                        <nav class="c-nav-tool">
+                            <ul class="c-nav-tool_list">
+                                <li>
+                                    <a href="./index.html#menu" class="c-link">Menu</a>
+                                </li>
+                    
+                                <li>
+                                    <a href="./index.html#topping" class="c-link">Topping</a>
+                                </li>
+                    
+                                <li>
+                                    <a href="./index.html#br" class="c-link">Brief Introduction</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="c-link">Preferences</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+        
+                    <div class="layout_item w-25">
+                        <nav class="c-nav-tool">
+                            <ul class="c-nav-tool_list">  
+                                <li class="c-nav-tool_item">
+                                    <a href="#" class="c-link">Contact</a>
+                                </li>
+                
+                                <li class="c-nav-tool_item">
+                                    <a href="./register.html" class="c-link">
+                                    Login
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="location" style="display: flex; justify-content: center;">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1Z2B_qQsi6Jstxu6iiilneIDS-Qs&hl=en_US&ehbc=2E312F"></iframe>
+                    </div>
+                </div>
+
+            <div class="layout c-2">
+                <div class="layout_item w-50">
+                    <ul class="flex">
+                        <li>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-paypal"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-credit-card"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layout_item w-25">
+                    <ul class="flex">
+                        <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layout_item w-25" style="display:flex;justify-content: end;align-items: center;">
+                    <a href="./register.html#top" class="btn-up"><i class="fa-solid fa-circle-chevron-up"></i></a>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="footer_copyright">
+            <p>&copy; 2024 Sweet Life Inc.</p>
+          </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

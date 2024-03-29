@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Sweet Life</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/efe18fb613.js" crossorigin="anonymous"></script>
+</head>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <ul class="nav">
+        <li class="nav__item"><a class="nav__link active" href="#">All</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Filter nr 1</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Filter nr 2</a></li>
+        <li class="nav__item"><a class="nav__link" href="#">Filter nr 3</a></li>
+      </ul>
+    </nav>
+  </div>
+  
+    <div class="modal">
+        <form class="form">
+          <div class="payment--options">
+            <button name="paypal" type="button">
+            
+            </button>
+            <button name="apple-pay" type="button">
+              
+            </button>
+            <button name="google-pay" type="button">
+         
+            </button>
+          </div>
+          <div class="separator">
+            <hr class="line">
+            <p>or pay using credit card</p>
+            <hr class="line">
+          </div>
+          <div class="credit-card-info--form">
+            <div class="input_container">
+              <label for="password_field" class="input_label">Card holder full name</label>
+              <input id="password_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="Enter your full name">
+            </div>
+            <div class="input_container">
+              <label for="password_field" class="input_label">Card Number</label>
+              <input id="password_field" class="input_field" type="number" name="input-name" title="Inpit title" placeholder="0000 0000 0000 0000">
+            </div>
+            <div class="input_container">
+              <label for="password_field" class="input_label">Expiry Date / CVV</label>
+              <div class="split">
+              <input id="password_field" class="input_field" type="text" name="input-name" title="Expiry Date" placeholder="01/23">
+              <input id="password_field" class="input_field" type="number" name="cvv" title="CVV" placeholder="CVV">
+            </div>
+            </div>
+          </div>
+            <button class="purchase--btn">Checkout</button>
+        </form>
+    </div>
+</body>
+</html>
